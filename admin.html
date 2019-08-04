@@ -1,0 +1,241 @@
+<html>
+    <head>
+        <title>Admin landing page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <style>
+              .navbar
+          {
+            height: 80px;
+           
+          }
+            .logo
+          {
+            margin-top: 20px;
+            color:white;
+            margin-left: 30px;
+          }
+          .d1
+          {
+              margin-top: 20px;
+             
+          }
+          .search
+            {
+                padding: 8px;
+                margin: 20px;
+                border-radius: 5px;
+            }
+            #b1
+            {
+                margin-left: -18px;
+                padding: 8px;
+                
+            }
+           
+        </style>
+    </head>
+    <body>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                      <div class="navbar-header">
+                        <h2 class="logo"><img src="logo.png" alt="logo" width="42" height="42">ourseShare</h2>
+                      </div>
+                      <ul class="nav navbar-nav navbar-right">
+                            <li style="color:whitesmoke;font-size:22px;margin-top: 27px ;margin-left:15px">Hi Admin!!</li>
+                            <li style="color:whitesmoke;font-size:20px;margin-top: 15px ;margin-left:15px"><a href="notifications.html"><span class="glyphicon glyphicon-bell"></span>Notifications</a></li>
+                            <li style="color:whitesmoke;font-size:20px;margin-top: 15px ;margin-left:15px"><a href="login.html"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+                        </ul>
+                        <div class="container">
+                                <ul class="nav nav-pills" role="tablist">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="pill" href="#user" style="margin-top: 20px; font-size:15px">Manage user</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#mentor" style="margin-top: 20px; font-size:15px">Manage mentor</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#prcvd" style="margin-top: 20px; font-size:15px">Payments recieved</a>
+                                  </li>
+                                  <li class="nav-item">
+                                        <a class="nav-link" data-toggle="pill" href="#pmade" style="margin-top: 20px; font-size:15px">Payments made</a>
+                                  </li>
+                                  <li class="nav-item">
+                                        <a class="nav-link" data-toggle="pill" href="#edit" style="margin-top: 20px; font-size:15px">Edit PP</a>
+                                  </li>
+                                </ul>
+                                <div class="tab-content">
+                                  <div id="user" class="container tab-pane active"><br>
+                                    <h3 style="margin-left: 30px">Manage user</h3>
+                                    <input type="search" placeholder="Search user.." class="search"><button type="button" class="btn btn-info" id="b1">Search</button>
+                                    <table class="table table-striped" style="margin-left: 20px">
+                                        <th style="background-color: lavender">sl.no</th>
+                                        <th style="background-color: lavender">Username</th>
+                                        <th style="background-color: lavender">Active?</th>
+                                        <th style="background-color: lavender">Action</th>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Naveen</td>
+                                            <td>Yes</td>
+                                            <td><button type="submit" class="btn btn-danger" style="width:120px;height:50px">De-activate</button>
+                                        </tr>
+                                        <tr>
+                                                <td>2</td>
+                                                <td>Vijay</td>
+                                                <td>No</td>
+                                                <td><button type="submit" class="btn btn-success" style="width:120px;height:50px">Activate</button>
+                                        </tr>
+                                        <tr>
+                                                <td>3</td>
+                                                <td>Suraj</td>
+                                                <td>Yes</td>
+                                                <td><button type="submit" class="btn btn-danger" style="width:120px;height:50px">De-activate</button>
+                                        </tr>
+                                        <tr>
+                                                <td>4</td>
+                                                <td>Mythili</td>
+                                                <td>No</td>
+                                                <td><button type="submit" class="btn btn-success" style="width:120px;height:50px">Activate</button>
+                                        </tr>
+                                    </table>
+                                  </div>
+                                  <div id="mentor" class="container tab-pane fade"><br>
+                                    <h3 style="margin-left: 30px">Manage mentor</h3>
+                                    <input type="search" placeholder="Search user.." class="search"><button type="button" class="btn btn-info" id="b1">Search</button>
+                                    <table class="table table-striped" style="margin-left: 20px">
+                                            <th style="background-color: lavender">sl.no</th>
+                                            <th style="background-color: lavender">Username</th>
+                                            <th style="background-color: lavender">Active?</th>
+                                            <th style="background-color: lavender">Action</th>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Avni</td>
+                                                <td>Yes</td>
+                                                <td><button type="submit" class="btn btn-danger" style="width:120px;height:50px">De-activate</button>
+                                            </tr>
+                                            <tr>
+                                                    <td>2</td>
+                                                    <td>Nithin</td>
+                                                    <td>No</td>
+                                                    <td><button type="submit" class="btn btn-success" style="width:120px;height:50px">Activate</button>
+                                            </tr>
+                                            <tr>
+                                                    <td>3</td>
+                                                    <td>Manasa</td>
+                                                    <td>Yes</td>
+                                                    <td><button type="submit" class="btn btn-danger" style="width:120px;height:50px">De-activate</button>
+                                            </tr>
+                                            <tr>
+                                                    <td>4</td>
+                                                    <td>Jones</td>
+                                                    <td>No</td>
+                                                    <td><button type="submit" class="btn btn-success" style="width:120px;height:50px">Activate</button>
+                                            </tr>
+                                        </table>
+                                  </div>
+                                  <div id="prcvd" class="container tab-pane fade"><br>
+                                    <h3>Payments recieved</h3>
+                                    <table class="table table-striped" style="margin-left: 20px;margin-top: 40px">
+                                            <th style="background-color: lavender">sl.no</th>
+                                            <th style="background-color: lavender">Name of the technology</th>
+                                            <th style="background-color: lavender">Username</th>
+                                            <th style="background-color: lavender">Duration in months</th>
+                                            <th style="background-color: lavender">Amount</th>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Spring</td>
+                                                <td>Avni</td>
+                                                <td>6</td>
+                                                <td>1000</td>
+                                            </tr>
+                                            <tr>
+                                                    <td>2</td>
+                                                    <td>Angular</td>
+                                                    <td>Suraj</td>
+                                                    <td>3</td>
+                                                    <td>600</td>
+                                            </tr>
+                                            <tr>
+                                                    <td>3</td>
+                                                    <td>Docker</td>
+                                                    <td>Neil</td>
+                                                    <td>3</td>
+                                                    <td>500</td>
+                                            </tr>
+                                            <tr>
+                                                    <td>4</td>
+                                                    <td>Core Java</td>
+                                                    <td>Akshay</td>
+                                                    <td>6</td>
+                                                    <td>800</td>
+                                            </tr>
+                                        </table>
+                                  </div>
+                                  <div id="pmade" class="container tab-pane fade"><br>
+                                    <h3>Payments made</h3>
+                                    <table class="table table-striped" style="margin-left: 20px;margin-top: 40px">
+                                            <th style="background-color: lavender">sl.no</th>
+                                            <th style="background-color: lavender">Name of the technology</th>
+                                            <th style="background-color: lavender">Name of the mentor</th>
+                                            <th style="background-color: lavender">Amount transferred</th>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Spring</td>
+                                                <td>Asha</td>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="25" aria-valuemax="100" style="width: 25%">
+                                                            25%
+                                                        </div>
+                                                </td>  
+                                            </tr>
+                                            <tr>
+                                                    <td>2</td>
+                                                    <td>Core Java</td>
+                                                    <td>Nishith</td>
+                                                    <td>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="50" aria-valuemax="100" style="width: 50%">
+                                                                50%
+                                                            </div>
+                                                    </td>  
+                                            </tr>
+                                            <tr>
+                                                    <td>3</td>
+                                                    <td>Hibernate</td>
+                                                    <td>Jones</td>
+                                                    <td>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="75" aria-valuemax="100" style="width: 75%">
+                                                                75%
+                                                            </div>
+                                                    </td>  
+                                            </tr>
+                                            <tr>
+                                                    <td>4</td>
+                                                    <td>Sql</td>
+                                                    <td>Himansh</td>
+                                                    <td>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="100" aria-valuemax="100" style="width: 100%">
+                                                                100%
+                                                            </div>
+                                                    </td>  
+                                                </tr>
+                                        </table>
+                                  </div>
+                                  <div id="edit" class="container tab-pane fade"><br>
+                                    <h3 style="margin-left: 30px">Edit commission percentage</h3>
+                                    <input type="text" class="search" ><button type="button" class="btn btn-warning" id="b1">Update</button>
+                                  </div>
+
+                                </div>
+                              </div>
+                </div>
+            </nav>       
+    </body>
+</html>
